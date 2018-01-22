@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Breadth 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140331
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<style>/*
+  body {
+   background: #444;
+   margin: 0;
+   font-family: monospace;
+  }
+  
+  h1 {
+   color: #fff;
+   text-align: center;
+  }
+  */
+  /*Estilos de la galeria*/
+  
+  .galeria {
+   width: 90%;
+   margin: auto;
+   list-style: none;
+   padding: 20px;
+   box-sizing: border-box;
+   
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  }
+  
+  .galeria li {
+   margin: 5px;
+  }
+  
+  .galeria img {
+   width: 150px;
+   height: 100px;
+  }
+  
+  /*Estilos del modal*/
+  
+  .modal {
+   display: none;
+  }
+  
+  .modal:target {
+   
+   display: block;
+   position: fixed;
+   background: rgba(0,0,0,0.8);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+  }
+  
+  .modal h3 {
+   color: #fff;
+   font-size: 30px;
+   text-align: center;
+   margin: 15px 0;
+  }
+  
+  .imagen {
+   width: 100%;
+   height: 50%;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .imagen a {
+   color: #fff;
+   font-size: 40px;
+   text-decoration: none;
+   margin: 0 10px;
+  }
+  
+  .imagen a:nth-child(2) {
+   margin: 0;
+   height: 100%;
+   flex-shrink: 2;
+  }
+  
+  .imagen img {
+   width: 500px;
+   height: 100%;
+   max-width: 100%;
+   border: 7px solid #fff;
+   box-sizing: border-box;
+  }
+  
+  .cerrar {
+   display: block;
+   background: #fff;
+   width: 25px;
+   height: 25px;
+   margin: 15px auto;
+   text-align: center;
+   text-decoration: none;
+   font-size: 25px;
+   color: #000;
+   padding: 5px;
+   border-radius: 50%;
+   line-height: 25px;
+  }
+   </style>
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+  <div id="header" class="container">
+    <div id="logo">
+      <h1><a href="#">Bitácora</a></h1>
+</div>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html" accesskey="1" title="">INICIO</a></li>
+        <li><a href="carta.html" accesskey="2" title="">NUESTRAS CARTAS</a></li>
+        <li class="current_page_item"><a href="galeria.html" accesskey="3" title="">GALERíA DE FOTOS</a></li>
+        <li><a href="reserva.html" accesskey="4" title="">RESERVAS</a></li>
+        <li><a href="contacto.html" accesskey="5" title="">CONTACTO Y LOCALIZACIÓN</a></li>
+      </ul>
+    </div>
+    <div><h2>Avenida Ménendez y Pelayo 7</h2></div>
+  </div>
+  <div class="title">
+    <h2></h2><br><br>
+<span class="byline"><h3>Nuestra GALERíA DE FOTOS</h3></span>
+
+
+<h1>Galería de instalaciones de Pasteur</h1>
+
+<ul class="galeria">
+<li><a href="#img15"><img src="images/bitacora/principal.jpg"></a></li>
+<li><a href="#img1"><img src="images/bitacora/a.jpg"></a></li>
+<li><a href="#img2"><img src="images/bitacora/c.jpg"></a></li>
+<li><a href="#img3"><img src="images/bitacora/d.jpg"></a></li>
+<li><a href="#img4"><img src="images/bitacora/e.jpg"></a></li>
+<li><a href="#img5"><img src="images/bitacora/f.jpg"></a></li>
+<li><a href="#img6"><img src="images/bitacora/g.jpg"></a></li>
+<li><a href="#img7"><img src="images/bitacora/h.jpg"></a></li>
+<li><a href="#img8"><img src="images/bitacora/i.jpg"></a></li>
+<li><a href="#img9"><img src="images/bitacora/j.jpg"></a></li>
+<li><a href="#img10"><img src="images/bitacora/k.jpg"></a></li>
+<li><a href="#img11"><img src="images/bitacora/l.jpg"></a></li>
+<li><a href="#img12"><img src="images/bitacora/m.jpg"></a></li>
+<li><a href="#img13"><img src="images/bitacora/n.jpg"></a></li>
+<li><a href="#img14"><img src="images/bitacora/o.jpg"></a></li>
+<li><a href="#img16"><img src="images/bitacora/e.jpg"></a></li>
+
+</ul>
+
+<div class="modal" id="img15">
+    <h3>Paisaje 15</h3>
+    <div class="imagen">
+      <a href="#img4">&#60;</a>
+      <a href="#img2"><img src="images/bitacora/principal.jpg"></a>
+      <a href="#img2">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+    </div>
+
+<div class="modal" id="img1">
+<h3>Paisaje 1</h3>
+<div class="imagen">
+  <a href="#img4">&#60;</a>
+  <a href="#img2"><img src="images/bitacora/a.jpg"></a>
+  <a href="#img2">></a>
+</div>
+<a class="cerrar" href="">X</a>
+</div>
+
+<div class="modal" id="img2">
+<h3>Paisaje 2</h3>
+<div class="imagen">
+  <a href="#img1">&#60;</a>
+  <a href="#img3"><img src="images/bitacora/c.jpg"></a>
+  <a href="#img3">></a>
+</div>
+<a class="cerrar" href="">X</a>
+</div>
+
+<div class="modal" id="img3">
+<h3>Paisaje 3</h3>
+<div class="imagen">
+  <a href="#img2">&#60;</a>
+  <a href="#img4"><img src="images/bitacora/d.jpg"></a>
+  <a href="#img4">></a>
+</div>
+<a class="cerrar" href="">X</a>
+</div>
+
+<div class="modal" id="img4">
+<h3>Paisaje 4</h3>
+<div class="imagen">
+  <a href="#img3">&#60;</a>
+  <a href="#img5"><img src="images/bitacora/e.jpg"></a>
+  <a href="#img5">></a>
+</div>
+<a class="cerrar" href="">X</a>
+</div>
+
+<div class="modal" id="img5">
+    <h3>Paisaje 5</h3>
+    <div class="imagen">
+      <a href="#img3">&#60;</a>
+      <a href="#img6"><img src="images/bitacora/f.jpg"></a>
+      <a href="#img6">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+    </div>
+
+    <div class="modal" id="img6">
+        <h3>Paisaje 6</h3>
+        <div class="imagen">
+          <a href="#img3">&#60;</a>
+          <a href="#img7"><img src="images/bitacora/g.jpg"></a>
+          <a href="#img7">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+        </div>
+
+       <div class="modal" id="img7">
+            <h3>Paisaje 7</h3>
+            <div class="imagen">
+              <a href="#img3">&#60;</a>
+              <a href="#img8"><img src="images/bitacora/h.jpg"></a>
+              <a href="#img8">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+            </div>
+
+            <div class="modal" id="img8">
+                <h3>Paisaje 8</h3>
+                <div class="imagen">
+                  <a href="#img3">&#60;</a>
+                  <a href="#img9"><img src="images/bitacora/i.jpg"></a>
+                  <a href="#img9">></a>
+                </div>
+                <a class="cerrar" href="">X</a>
+                </div>
+
+                <div class="modal" id="img9">
+                    <h3>Paisaje 9</h3>
+                    <div class="imagen">
+                      <a href="#img3">&#60;</a>
+                      <a href="#img10"><img src="images/bitacora/j.jpg"></a>
+                      <a href="#img10">></a>
+                    </div>
+                    <a class="cerrar" href="">X</a>
+                    </div>
+
+
+
+                    <div class="modal" id="img10">
+                        <h3>Paisaje 10</h3>
+                        <div class="imagen">
+                          <a href="#img3">&#60;</a>
+                          <a href="#img11"><img src="images/bitacora/k.jpg"></a>
+                          <a href="#img11">></a>
+                        </div>
+                        <a class="cerrar" href="">X</a>
+                        </div>
+
+
+                        <div class="modal" id="img11">
+                            <h3>Paisaje 11</h3>
+                            <div class="imagen">
+                              <a href="#img3">&#60;</a>
+                              <a href="#img12"><img src="images/bitacora/l.jpg"></a>
+                              <a href="#img12">></a>
+                            </div>
+                            <a class="cerrar" href="">X</a>
+                            </div>
+
+
+
+                            <div class="modal" id="img12">
+                                <h3>Paisaje 12</h3>
+                                <div class="imagen">
+                                  <a href="#img3">&#60;</a>
+                                  <a href="#img13"><img src="images/bitacora/m.jpg"></a>
+                                  <a href="#img13">></a>
+                                </div>
+                                <a class="cerrar" href="">X</a>
+                                </div>
+
+                                <div class="modal" id="img13">
+                                    <h3>Paisaje 13</h3>
+                                    <div class="imagen">
+                                      <a href="#img3">&#60;</a>
+                                      <a href="#img14"><img src="images/bitacora/n.jpg"></a>
+                                      <a href="#img14">></a>
+                                    </div>
+                                    <a class="cerrar" href="">X</a>
+                                    </div>
+
+                                    <div class="modal" id="img14">
+                                        <h3>Paisaje 14</h3>
+                                        <div class="imagen">
+                                          <a href="#img3">&#60;</a>
+                                          <a href="#img16"><img src="images/bitacora/o.jpg"></a>
+                                          <a href="#img16">></a>
+                                        </div>
+                                        <a class="cerrar" href="">X</a>
+                                        </div>
+
+                                        
+
+                                            <div class="modal" id="img16">
+                                                <h3>Paisaje 16</h3>
+                                                <div class="imagen">
+                                                  <a href="#img3">&#60;</a>
+                                                  <a href="#img15"><img src="images/bitacora/e.jpg"></a>
+                                                  <a href="#img15">></a>
+                                                </div>
+                                                <a class="cerrar" href="">X</a>
+                                                </div>
+
+    
+</div>
+</div>
+
+<div id="wrapper">
+  <div id="featured-wrapper">
+      <div id="featured" class="container">
+          <div class="column1"><a href="https://twitter.com/BitacoraSevilla" target="_blank"><img alt="siguenos en Twitter" height="48" src="http://2.bp.blogspot.com/-CaF1EOBAWj4/UiX1AxmkZuI/AAAAAAAAB2Y/IioIplosXNo/s1600/Twitter+NEW.png" title="síguenos en Twitter" width="48" /></a>
+            
+            <div class="title">
+              <h2>Nuestro Twitter</h2>
+            </div>
+            <p>La comida es muy representativa de la cultura de una ciudad. Para poder conocer un lugar y a la gente, tienes que comer su comida.- Emeril Lagasse.</p>
+          </div>
+          <div class="column2"> <a href="https://www.instagram.com/bitacora.sevilla/" target="_blank"><img alt="síguenos en Instagram" height="48" src="http://2.bp.blogspot.com/-6o2p2ehwMU4/UidPFSMM0vI/AAAAAAAAB_w/0v1pGNm_Dyg/s1600/instagram2.png" title="síguenos en Instagram" width="48" /></a>
+          
+            <div class="title">
+              <h2>Siguenos</h2>
+            </div>
+            <p>Saborear un platillo debe ser memorable.-Alain Ducasse.</p>
+          </div>
+          <div class="column3"> <a href="URL-FACEBOOK" target="_blank"><img alt="siguenos en facebook" height="48" src="http://4.bp.blogspot.com/-LnKbkk802kw/UiXwV9rN8xI/AAAAAAAAB0Y/fQCQKFEbvjM/s1600/face.png" title="síguenos en facebook" width="48" /></a>
+            
+            <div class="title">
+              <h2>Nuestra Página</h2>
+            </div>
+            <p>La comida une a la gente en muchos niveles diferentes. Es el alimento del alma y del cuerpo; realmente es amor.- Giada de Laurentis.</p>
+          </div>
+          <div class="column4"> <a href="contacto.html" target="_blank"><img alt="sígueme por Correo" height="48" src="http://4.bp.blogspot.com/-0jl15c8qL3o/UiX0_E2uNjI/AAAAAAAAB1g/r5BfxtEJFzA/s1600/Mail.png" title="Contactanos por Correo" width="48" /></a>
+            
+            <div class="title">
+              <h2>Contactanos</h2>
+            </div>
+            <p>Eres lo que comes, así que come bien.-Chef Francesco</p>
+          </div>
+        </div>
+  </div>
+  <div id="extra" class="container">
+    <h2>QUEREMOS SORPRENDERTE CON NUESTRAS ESPECIALIDADES</h2>
+    <span>LA FELICIDAD ES UNA ETERNA DISCIPLINA</span> 
+    <p>This is <strong>Breadth</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+
+    <a href="#" class="button">Etiam posuere</a> </div>
+</div>
+
+<div id="copyright" class="container">
+  
+</div>
+</body>
+</html>
